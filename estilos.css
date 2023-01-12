@@ -1,0 +1,16 @@
+/* fuente google */
+body {
+    font-family: "Audiowide", sans-serif;
+}
+
+.nav {
+    background-image: radial-gradient(circle, #ff0000, #c20023, #820327, #420f1d, #000000);
+}
+
+.nav-link {
+color: antiquewhite;
+}
+
+body {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0)), url(img/Naval_ensign_of_the_Empire_of_Japan.jpg);
+background-size: auto;
+}
