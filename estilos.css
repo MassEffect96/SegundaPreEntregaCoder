@@ -1,16 +1,215 @@
 /* fuente google */
 body {
     font-family: "Audiowide", sans-serif;
-}
+    
+    }
+/* Cambio estilo global de boots bgdark y navbar */
 
-.nav {
-    background-image: radial-gradient(circle, #ff0000, #c20023, #820327, #420f1d, #000000);
-}
+    .bg-dark {
+    --bs-bg-opacity: 1;
+       background: radial-gradient(circle, rgba(255, 0, 0, 0.432) 0%, rgba(0,0,0,1) 100%);
+    }
 
-.nav-link {
-color: antiquewhite;
-}
+    .navbar-dark {
+        --bs-navbar-color: rgb(255, 255, 255);
+        --bs-navbar-hover-color: rgb(255, 17, 0);
+        --bs-navbar-disabled-color: rgba(243, 243, 243, 0.925);
+        --bs-navbar-active-color: rgba(255, 0, 0, 0.973);
+        --bs-navbar-brand-color: rgb(236, 9, 9);
+        --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.459);
+        --bs-navbar-toggler-border-color: rgba(255, 0, 0, 0.849);
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e)
 
-body {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0)), url(img/Naval_ensign_of_the_Empire_of_Japan.jpg);
-background-size: auto;
+     
+    }
+    /* estilo carousel */
+    .carousel-caption {
+        text-shadow: 2px 2px 8px red;
+    }
+/* estilos de las card----------------------- */
+    .card-title{
+        color: red;
+        text-shadow: 1px 1px 9px rgb(8, 0, 0);
+
+        
+    }
+
+    .card-text { text-shadow: 1px 1px 9px red;
+    text-align: justify;
+    color: azure;
+    text-decoration: underline red;
+    }
+
+    .btn {
+        border: var(--bs-btn-border-width) solid #b02a37;
+        background-color: #b02a37;
+        
+    }
+    
+    .btn-primary {
+    --bs-btn-hover-bg: #d70b0b;
+    --bs-btn-hover-border-color: #ca0a0a;
+    }
+    /* formulario de contacto */
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      
+      /* Estilo del label de los imputs */
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      /* Estilo Boton Submit */
+      input[type=submit] {
+        background-color: #a8031fd3;
+        color: var(--main-c);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      .section{
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 1rem;
+      }
+      
+      .column-4{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+      }
+      
+      .tarjeta-rest{
+        background-repeat: no-repeat;
+        height: 400px;
+        border-radius: 6px;
+        padding: 1rem .5rem;
+        display: flex;
+        align-items: end;
+      }
+      .wrap-text_tarjeta-rest{
+        color: rgb(241, 9, 9);
+        padding: .5rem;
+        border-radius: 6px;
+        background:linear-gradient(to top, rgba(255, 0, 0, 0.5), rgb(0 0 0 / .5));
+      }
+      
+      .wrap-text_tarjeta-rest p{
+        color: #f2f2f2;
+      }
+      .cta-wrap_tarjeta-rest{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .precio_tarjeta-rest span{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .cta_tarjeta-rest{
+        background-color: var(--main-c);
+        padding: .25rem 1rem;
+        border-radius: 4px;
+      }
+      .cta_tarjeta-rest a{
+        color: #fff;
+        font-weight: bold;
+      }
+
+    footer{
+        background-image: url(img/Naval_ensign_of_the_Empire_of_Japan.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+      
+        footer ul{
+        color: #0365a7;
+        list-style: none;
+        padding: 0;
+      }
+      
+      .wrap-footer{
+        display: grid;
+        grid-template-columns: 30% 15% 15% 20%;
+        column-gap: 5%;
+        padding: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+      }
+      
+      element-footer h5{
+        margin: 1rem 0;
+      }
+      
+      .text-element-footer{
+        line-height: 2;
+      }
+      
+      .text-element-footer li a{
+        color: var(--main-c);
+      }
+      
+      .redes-element-footer ul{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .redes-element-footer img{
+        width: 4rem;
+      }
+      .rededs-element-footer li{
+        margin-right: 1rem;
+      }
+      
+      .footer-creds{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        color: #576171;
+        font-size: .9rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .legal-creds ul{
+        display: flex;
+      }
+      
+      .legal-creds ul li{
+        padding-right: 1rem;
+      }
+      
+      .legal-creds ul li a{
+        color: #576171;
+      }
+      
+      @media (max-width:768px){
+        .wrap-footer{
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+      
+      @media (max-width:480px){
+        .wrap-footer{
+          grid-template-columns: repeat(1,1fr);
+        }
+      }
+      
+      @media (max-width:320px){
+        .footer-creds{
+          flex-flow: column;
+        }
 }
